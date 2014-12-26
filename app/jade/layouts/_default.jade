@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title mensory
+    title つなたま
     meta(charset='UTF-8')
     meta(content='', name='description')
     meta(content='', name='author')
@@ -13,15 +13,20 @@ html(lang="en")
 
   body(class=page)
     //header
-    //-sh1
-    div
+    ul
+      li いちご
+      li イチジク
+      li 一味唐辛子
+      
+    //- sh1
+    //-div
       button.btn.btn-default(type='button') Default
       button.btn.btn-primary(type='button') Primary
       button.btn.btn-success(type='button') Success
       button.btn.btn-info(type='button') Info
       button.btn.btn-warning(type='button') Warning
       button.btn.btn-danger(type='button') Danger
-      
+       
 
 
     block content
@@ -29,12 +34,15 @@ html(lang="en")
     // Footer
     footer
 
+    // css
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css', media='screen')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap-theme.css', media='screen')
+      
     // build:js /scripts/main.js
     
     script(src='/bower_components/jquery/dist/jquery.js')
-    script(src='/bower_components/masonry/masonry.js')
+    script(src='/bower_components/masonry/dist/masonry.pkgd.min.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
-          
     
     script(src='/scripts/main.js')
     // endbuild
