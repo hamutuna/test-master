@@ -13,10 +13,20 @@ html(lang="en")
 
   body(class=page)
     //header
+    img(src='/images/rcon.png', alt='rcon')
     ul
-      li いちご
-      li イチジク
-      li 一味唐辛子
+      //-li TOP(最初に出す画面　最新の作品やスキル、最新のブログをリアルタイム表示)
+      li 
+      a(href='http://www.javadrive.jp/') プロフィール
+      li 
+      a(href='http://www.javadrive.jp/') 作品
+      li 
+      a(href='http://www.javadrive.jp/') ブログ
+      li 
+      a(href='http://www.javadrive.jp/') お問い合わせ
+      li 
+      a(href='http://www.javadrive.jp/') English(日本語との切り替え)
+    
       
     //- sh1
     //-div
@@ -36,7 +46,7 @@ html(lang="en")
 
     // css
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css', media='screen')
-    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap-theme.css', media='screen')
+    link(rel='stylesheet',href='bower_components/bootstrap/dist/css/bootstrap-theme.css', media='screen')
       
     // build:js /scripts/main.js
     
