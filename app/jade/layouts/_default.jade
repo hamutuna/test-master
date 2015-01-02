@@ -13,21 +13,22 @@ html(lang="en")
 
   body(class=page)
     //header
-    img(src='/images/rcon.png', alt='rcon')
-      
-    ul
-      //-li TOP(最初に出す画面　最新の作品やスキル、最新のブログをリアルタイム表示)
-      li 
-        a(href='http://www.javadrive.jp/') プロフィール
-      li 
-          a(href='http://www.javadrive.jp/') 作品
-      li 
-        a(href='http://www.javadrive.jp/') ブログ
-      li 
-        a(href='http://www.javadrive.jp/') お問い合わせ
-      li 
-        a(href='http://www.javadrive.jp/') English
-    
+    header
+      img(src='/images/post.png', alt='icon')
+      h1(class=h1) 作品
+      nav
+        ul
+          //-li TOP 最初に出す画面　最新の作品やスキル、最新のブログをリアルタイム表示
+          li 
+            a(href='http://www.javadrive.jp/') プロフィール
+          li 
+            a(href='http://www.javadrive.jp/') 作品
+          li 
+            a(href='http://www.javadrive.jp/') ブログ
+          li
+            a(href='http://www.javadrive.jp/') お問い合わせ
+          li 
+            a(href='http://www.javadrive.jp/') English
       
     //- sh1
     //-div
@@ -44,7 +45,7 @@ html(lang="en")
 
     // Footer
     footer
-
+      p Tunatamawebfactory Inc.  Thank you for reading it!
     // css
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css', media='screen')
     link(rel='stylesheet',href='bower_components/bootstrap/dist/css/bootstrap-theme.css', media='screen')
