@@ -4,12 +4,6 @@ body{
   background-image: url("/images/back.png");
 }
 
-/*h1{
-  //float: ;
-  margin-left: 10px;
-  padding-left: 0;
-}*/
-
 ul{
   margin-left: 0;
   padding-left: 0;
@@ -40,21 +34,23 @@ a{
   text-decoration: none;
   background-color: #eeeeee;
   color: #555555;
+  //
   width: 300px;
   &:hover {
     background-color: #aaaaaa;
   }
 }
 
-header,footer,a{
-  background-color: black;
+header,footer{
+  background-color: #444444;
+  color: white;
+  height: 77px;
 }
 
 h1{
   float: right;
-  padding-top: 120px;
+  padding-top: 0px;
   padding-right:100px;
-  color: white;
 }
 
 #masonry {
