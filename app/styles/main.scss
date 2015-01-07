@@ -21,8 +21,13 @@ li{
   //width: 220px;
 }
 
+nav {
+  height: 0;
+}
+
 a{
-  display: block;
+  display:table;
+  // display: block;
   float: left;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -32,13 +37,16 @@ a{
   //border-bottom: 1px solid #cccccc;
   text-align: center;
   text-decoration: none;
-  background-color: #eeeeee;
   color: #555555;
   //
   width: 300px;
   &:hover {
     background-color: #aaaaaa;
   }
+}
+
+a.header-menu {
+  background-color: #444;
 }
 
 header,footer{
