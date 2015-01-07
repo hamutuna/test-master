@@ -6,6 +6,8 @@ html(lang="en")
     meta(content='', name='description')
     meta(content='', name='author')
     meta(content='3 days', name='revisit-after')
+    // viewport
+    meta(name='viewport', content='width=device-width ')
 
     // build:css /styles/main.css
     link(href='/styles/main.css', rel='stylesheet')
@@ -55,7 +57,10 @@ html(lang="en")
     script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/bower_components/masonry/dist/masonry.pkgd.min.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
-    
+    //if lt IE 9
+    script(type='text/javascript',src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+        
+        
     script(src='/scripts/main.js')
     // endbuild
     
