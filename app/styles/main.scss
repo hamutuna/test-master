@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   //color: #000000;
   //background-color: #f8dce0;
   background-image: url("/images/back.png");
+  /* 文字サイズを自動調整する機能を無効化 */
+  -webkit-text-size-adjust: 100%;
 }
 
 ul{
@@ -77,3 +84,30 @@ h1{
   color: #FFF;
   display: inline;
 }
+
+/* clearfix */
+/*jadeとの関連まだ*/
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  display: inline-block;
+}
+
+/* Hides from IE Mac \*/
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* End Hack */
