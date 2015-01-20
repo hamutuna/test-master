@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+}*/
 
 body{
   //color: #000000;
@@ -56,6 +56,14 @@ a.header-menu {
   background-color: #444;
 }
 
+/* 画像の最大幅を100%に */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  /* IE8 */
+}
+
 header,footer{
   background-color: #444444;
   color: white;
@@ -67,6 +75,22 @@ h1{
   padding-top: 0px;
   padding-right:100px;
 }
+
+
+/* PC向け */
+//@media screen and (min-width: 960px) {
+  /* ここにPC向けCSSを記述する */
+//}
+
+/* タブレット向け */
+//@media screen and (min-width: 480px) and (max-width: 959px) {
+  /* ここにタブレット向けCSSを記述する */
+//}
+
+/* スマホ向け */
+//@media screen and (max-width: 479px) {
+  /* ここにスマホ向けCSSを記述する */
+//}
 
 #masonry {
   width: 100%;
@@ -88,7 +112,7 @@ h1{
 /* clearfix */
 /*jadeとの関連まだ*/
 
-.clearfix {
+/*.clearfix {
   &:after {
     content: ".";
     display: block;
@@ -98,16 +122,16 @@ h1{
     visibility: hidden;
   }
   display: inline-block;
-}
+}*/
 
 /* Hides from IE Mac \*/
 
-* html .clearfix {
+/* * html .clearfix {
   height: 1%;
 }
 
 .clearfix {
   display: block;
-}
+}*/
 
 /* End Hack */
